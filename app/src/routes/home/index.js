@@ -4,9 +4,9 @@ const express = require("express")
 const router = express.Router();
 
 // controller import
-const controller = require("./homeController");
+const homeController = require("./homeController");
 
-router.get("/", controller.home);
-router.get("/login", controller.login);
+router.get("/", homeController.home);
+router.get("/login", homeController.login);
 
 module.exports = router;
